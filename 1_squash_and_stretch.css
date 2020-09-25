@@ -1,0 +1,32 @@
+.bounce {
+  animation: bounce infinite both alternate ease-in 2s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(var(--bottom));
+  }
+}
+
+.squash {
+  animation-name: squash;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  transform-origin: bottom;
+  animation-direction: inherit;
+}
+
+@keyframes squashg {
+  97% {
+    transform: scaleX(1);
+  }
+
+  100% {
+    transform: scaleX(1.5);
+  }
+}
